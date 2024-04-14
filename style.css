@@ -61,11 +61,16 @@ button:active {
 }
 
 .header-search {
-  align-items: flex-start;
+  align-items: center;
+
   gap: 20px;
 }
+
+.header-search img {
+  margin-top: 7px;
+}
 input[type="search"] {
-  height: 40px;
+  height: 35px;
   width: 800px;
   padding-left: 5px;
   border-radius: 16px;
@@ -82,6 +87,15 @@ input[type="search"]:focus {
   gap: 20px;
   margin-bottom: 20px;
 }
+.header img {
+  height: 35px;
+  width: 35px;
+}
+.header-welcome > img {
+  height: 50px;
+  width: 50px;
+}
+
 .header-welcome > div {
   display: flex;
   flex-direction: column;
@@ -96,13 +110,25 @@ input[type="search"]:focus {
   gap: 40px;
 }
 .header-notification {
+  align-items: center;
   justify-content: flex-end;
   gap: 40px;
 }
+
+.header-notification img {
+  padding: 5px;
+}
+.header-notification img:hover {
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.header-notification img:active {
+  background-color: #d1d5db;
+}
 .header-notification p {
-  margin-top: 12px;
   font-weight: bold;
 }
+
 /*main content styling*/
 
 .main-content {
@@ -219,8 +245,27 @@ input[type="search"]:focus {
   color: #f8fafc;
   font-weight: bold;
 }
+
+.sidebar-dashboard,
 .sidebar-content > div {
   display: flex;
-  gap: 30px;
-  margin-left: 30px;
+  align-items: center;
+  gap: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.1rem;
+}
+.sidebar-content > div:hover {
+  background-color: #1193cf;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.sidebar-content > div:active {
+  background-color: #0d85bd;
+}
+.sidebar-dashboard img {
+  height: 60px;
+  width: 60px;
 }
